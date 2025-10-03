@@ -1,19 +1,6 @@
 {
-<<<<<<< HEAD
   "buildCommand": "npm run build",
-  "outputDirectory": ".next",
-  "framework": "nextjs",
-  "installCommand": "npm install",
-  "env": {
-    "DATABASE_URL": "@database_url"
-  }
-}
-
-
-=======
-  "buildCommand": "npx prisma generate && npx prisma db push && npm run build",
   "outputDirectory": ".next",
   "framework": "nextjs",
   "installCommand": "npm install"
 }
->>>>>>> master
