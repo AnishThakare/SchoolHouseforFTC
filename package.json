@@ -4,13 +4,22 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
+<<<<<<< HEAD
+    "build": "prisma generate && next build",
+=======
     "build": "next build",
+>>>>>>> master
     "start": "next start",
     "lint": "next lint",
     "setup": "node scripts/setup.js",
     "db:generate": "prisma generate",
     "db:push": "prisma db push",
+<<<<<<< HEAD
+    "db:studio": "prisma studio",
+    "postinstall": "prisma generate"
+=======
     "db:studio": "prisma studio"
+>>>>>>> master
   },
   "dependencies": {
     "next": "14.0.4",
@@ -38,3 +47,8 @@
     "eslint-config-next": "14.0.4"
   }
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> master

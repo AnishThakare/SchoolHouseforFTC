@@ -1,6 +1,10 @@
 'use client'
 
+<<<<<<< HEAD
+import { useState, useEffect, useCallback } from 'react'
+=======
 import { useState, useEffect } from 'react'
+>>>>>>> master
 import { MessageSquare, User, Clock } from 'lucide-react'
 import { PostCard } from './PostCard'
 
@@ -26,11 +30,15 @@ export function PostList({ department }: PostListProps) {
   const [posts, setPosts] = useState<Post[]>([])
   const [loading, setLoading] = useState(true)
 
+<<<<<<< HEAD
+  const fetchPosts = useCallback(async () => {
+=======
   useEffect(() => {
     fetchPosts()
   }, [department])
 
   const fetchPosts = async () => {
+>>>>>>> master
     try {
       setLoading(true)
       const response = await fetch(`/api/posts?department=${department}`)
@@ -41,7 +49,15 @@ export function PostList({ department }: PostListProps) {
     } finally {
       setLoading(false)
     }
+<<<<<<< HEAD
+  }, [department])
+
+  useEffect(() => {
+    fetchPosts()
+  }, [fetchPosts])
+=======
   }
+>>>>>>> master
 
   if (loading) {
     return (
@@ -78,3 +94,8 @@ export function PostList({ department }: PostListProps) {
     </div>
   )
 }
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> master
